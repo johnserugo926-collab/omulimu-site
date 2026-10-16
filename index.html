@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Omulimu – Jobs in Uganda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f8f6;--surface:#fff;--ink:#17232b;--muted:#5b6872;--line:#dfe4e1;--brand:#f2c230;--brand-ink:#17232b;--gold:#9a6500;--soft:#fff4c8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="dark"]{--bg:#101817;--surface:#192321;--ink:#edf2ed;--muted:#aab6ae;--line:#33403a;--brand:#f2c230;--brand-ink:#17232b;--gold:#f2c230;--soft:#39351f}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "DM Sans",system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);background:var(--surface)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;font-size:22px;letter-spacing:0;cursor:pointer;border:0;background:none;color:var(--ink);padding:0}
+.logo span{color:var(--brand)}
+nav{display:flex;gap:8px}
+button{font:inherit;cursor:pointer}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:9px 16px;border-radius:8px;font-weight:700}
+.btn.p{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+.contact-trigger{width:auto;min-width:0;padding:8px 11px;display:inline-flex;align-items:center;justify-content:center;gap:7px;white-space:nowrap}
+.contact-trigger svg{width:18px;height:18px;flex:none}
+dialog{width:min(420px,calc(100% - 32px));padding:24px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+dialog::backdrop{background:rgba(16,24,23,.48)}
+.contact-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.contact-heading h2{font-size:23px;margin:0}
+.contact-close{border:0;background:none;color:var(--muted);font-size:26px;line-height:1;padding:4px}
+.contact-methods a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
+.contact-methods a:last-child{border-bottom:0}
+.contact-methods span{color:var(--muted);font-size:13px}
+.contact-methods strong{font-size:14px;overflow-wrap:anywhere;text-align:right}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+h1{font-family:"DM Serif Display",Georgia,serif;font-size:46px;line-height:1.06;letter-spacing:0;font-weight:400;margin:0 0 16px;max-width:13em}
+.sub{color:var(--muted);max-width:38em;margin:0 0 24px}
+.hero{display:grid;grid-template-columns:1.04fr .96fr;gap:44px;align-items:center;padding:32px 0 24px}
+.eyebrow{font-size:12px;line-height:1.2;font-weight:800;letter-spacing:0;text-transform:uppercase;color:#745100;margin:0 0 15px}
+.hero-copy .sub{font-size:17px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.hero-actions .btn{padding:12px 18px}
+.hero-image{position:relative;min-height:280px;border-radius:8px;overflow:hidden;background:#d5d8c2}
+.hero-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.image-caption{position:absolute;left:16px;bottom:16px;background:var(--surface);color:var(--ink);padding:9px 13px;border-radius:6px;font-size:13px;font-weight:700}
+.pathways{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 0 36px}
+.pathway{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px 18px 0;color:var(--ink);text-decoration:none}
+.pathway+.pathway{border-left:1px solid var(--line);padding-left:20px}
+.pathway strong{display:block;font-size:15px}
+.pathway span{color:var(--muted);font-size:13px}
+.pathway b{font-size:20px;color:#745100}
+.section-heading{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:0 0 12px}
+.section-heading h2{font-size:25px;line-height:1.2;margin:0;font-weight:800}
+.section-heading p{font-size:14px;color:var(--muted);margin:0}
+.search{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 14px;border-radius:99px;font-size:14px}
+.chip[aria-pressed="true"]{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+.count{color:var(--muted);font-size:14px;margin:8px 0}
+.job{display:block;width:100%;text-align:left;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px;padding:16px 18px;margin-bottom:10px;color:var(--ink)}
+.job:hover{border-color:var(--brand)}
+.job h3{margin:0 0 2px;font-size:18px}
+.meta{color:var(--muted);font-size:14px}
+.tag{display:inline-block;background:var(--soft);color:var(--brand);font-size:13px;font-weight:600;padding:2px 10px;border-radius:99px;margin:8px 6px 0 0}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;margin:28px 0}
+.panel h2{margin:0 0 4px;font-size:26px;letter-spacing:0}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:block;font-weight:600;font-size:14px;margin:14px 0 4px}
+.check-row{display:flex;align-items:center;gap:9px;margin:10px 0}
+.check-row input{width:auto;margin:0;accent-color:var(--brand)}
+.check-row label{margin:0}
+.auth-switch{border:0;background:none;color:#745100;font-weight:700;padding:8px 0}
+.auth-status{margin-top:14px}
+.back{border:0;background:none;color:var(--brand);font-weight:600;padding:20px 0 0}
+.ok{background:var(--soft);color:var(--brand);padding:14px;border-radius:8px;font-weight:600;margin-top:16px}
+ul.req{padding-left:20px;margin:8px 0}
+.hide{display:none}
+.tabs{display:flex;gap:8px;margin-bottom:12px}
+.stat{display:flex;gap:28px;flex-wrap:wrap;margin:28px 0 8px;color:var(--muted);font-size:14px}.stat b{display:block;color:var(--ink);font-size:20px}
+footer{color:var(--muted);font-size:13px;padding:32px 0}
+@media(max-width:720px){.hero{grid-template-columns:1fr;gap:24px;padding-top:28px}.hero-image{min-height:250px}.hero h1{font-size:42px}}
+@media(max-width:640px){.wrap{padding:0 16px}.search,.row{grid-template-columns:1fr}.bar{height:auto;min-height:64px;gap:8px}nav{gap:4px;flex-wrap:wrap;justify-content:flex-end;max-width:245px}nav .btn{padding:6px 8px;font-size:11px}.contact-trigger{min-width:0;padding:6px 8px}.hero h1{font-size:36px}.pathways{grid-template-columns:1fr}.pathway{padding:15px 0}.pathway+.pathway{border-left:0;border-top:1px solid var(--line);padding-left:0}.section-heading{display:block}.section-heading p{margin-top:4px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <button class="logo" onclick="go('home')">Omuli<span>mu</span></button>
+  <nav>
+    <button class="btn" onclick="startProfileFlow()">Create profile</button>
+    <button class="btn p" onclick="startPostFlow()">Post a job</button>
+    <button class="btn" id="auth-button" onclick="handleAccountButton()">Sign in</button>
+    <button class="btn contact-trigger" type="button" aria-label="Contact us" title="Contact us" aria-haspopup="dialog" aria-controls="contact-dialog" onclick="openContact()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.35 1.84.58 2.8.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Contact Us</span>
+    </button>
+  </nav>
+</div></header>
+<dialog id="contact-dialog" aria-labelledby="contact-title">
+  <form method="dialog" class="contact-heading">
+    <h2 id="contact-title">Contact Omulimu</h2>
+    <button class="contact-close" type="submit" aria-label="Close contact dialog">&times;</button>
+  </form>
+  <p class="meta">Choose how to reach our team.</p>
+  <div class="contact-methods">
+    <a href="tel:+256706330772"><span>Phone</span><strong>+256 706 330 772</strong></a>
+    <a href="https://wa.me/256740286281" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><strong>+256 740 286 281</strong></a>
+    <a href="mailto:omulimu143@gmail.com"><span>Email</span><strong>omulimu143@gmail.com</strong></a>
+  </div>
+</dialog>
+
+<main class="wrap" id="main">
+
+<!-- HOME / LIST -->
+<section id="home">
+  <div class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Uganda works here</p>
+      <h1>Good work starts with the right connection.</h1>
+      <p class="sub">Omulimu brings Uganda's job seekers and employers together. Find your next opportunity, or meet the person your team needs.</p>
+      <div class="hero-actions">
+        <button class="btn p" onclick="go('home');$('q').focus()">Find a job</button>
+        <button class="btn" onclick="startPostFlow()">Hire someone</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Workshop_with_KCCA_and_NWSC_%286897472745%29.jpg" alt="Participants at a workshop with KCCA and NWSC in Kampala">
+      <div class="image-caption">KCCA &amp; NWSC workshop · Kampala, Uganda</div>
+    </div>
+  </div>
+  <div class="pathways" aria-label="Get started">
+    <a class="pathway" href="#jobs" onclick="go('home');setTimeout(function(){$('q').focus()},0)">
+      <div><strong>I'm looking for work</strong><span>Search roles and apply directly.</span></div><b aria-hidden="true">&rarr;</b>
+    </a>
+    <a class="pathway" href="#post" onclick="startPostFlow()">
+      <div><strong>I'm hiring</strong><span>Post a role and reach local talent.</span></div><b aria-hidden="true">&rarr;</b>
+    </a>
+  </div>
+  <div id="jobs" class="section-heading">
+    <h2>Explore open roles</h2>
+    <p>Opportunities from across Uganda</p>
+  </div>
+  <div class="search">
+    <input id="q" placeholder="Job title or skill, e.g. nurse, driver, accountant" oninput="render()" aria-label="Search jobs">
+    <select id="loc" onchange="render()" aria-label="Location"><option value="">All districts</option></select>
+    <button class="btn p" onclick="render()">Search jobs</button>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="count" id="count"></div>
+  <div id="list"></div>
+  <div class="stat"><div><b id="sj">0</b>open roles</div></div>
+</section>
+
+<!-- DETAIL -->
+<section id="detail" class="hide"></section>
+
+<!-- ACCOUNT -->
+<section id="account" class="hide">
+  <button class="back" onclick="go('home')">Back to jobs</button>
+  <div class="panel">
+    <h2 id="auth-title">Create your account</h2>
+    <p id="auth-copy" class="meta">Sign up as a job seeker or employer to use Omulimu.</p>
+    <div id="auth-name-wrap"><label for="auth-name">Full name</label><input id="auth-name" autocomplete="name" placeholder="Your name"></div>
+    <div id="auth-role-wrap"><label for="auth-role">I am a</label><select id="auth-role"><option value="seeker">Job seeker</option><option value="employer">Employer</option></select></div>
+    <label for="auth-email">Email</label><input id="auth-email" type="email" autocomplete="email" placeholder="you@example.com">
+    <label for="auth-password">Password</label><input id="auth-password" type="password" autocomplete="current-password" placeholder="At least 8 characters">
+    <p><button class="btn p" id="auth-submit" onclick="submitAuth()">Create account</button></p>
+    <button class="auth-switch" id="auth-toggle" onclick="toggleAuthMode()">Already have an account? Sign in</button>
+    <div id="auth-message" class="ok auth-status hide" role="status"></div>
+  </div>
+</section>
+
+<!-- JOB SEEKER -->
+<section id="seeker" class="hide">
+  <button class="back" onclick="go('home')">Back to jobs</button>
+  <div class="panel">
+    <h2>Create your profile</h2>
+    <p class="meta">Employers see this when you apply.</p>
+    <div class="row">
+      <div><label for="sn">Full name</label><input id="sn" placeholder="Your name"></div>
+      <div><label for="st">Profession</label><input id="st" placeholder="e.g. Nurse, driver, teacher"></div>
+      <div><label for="sy">Years of experience</label><input id="sy" type="number" min="0" placeholder="2"></div>
+      <div><label for="sl">Location</label><select id="sl"></select></div>
+    </div>
+    <label for="se">Email</label><input id="se" type="email" placeholder="you@example.com">
+    <label for="sk">Skills</label><input id="sk" placeholder="e.g. Driving permit, customer care, Excel">
+    <label for="scv">CV</label><input id="scv" type="file" accept=".pdf,.doc,.docx">
+    <p><button class="btn p" onclick="saveProfile()">Save profile</button></p>
+    <div id="sok" class="ok hide"></div>
+  </div>
+</section>
+
+<!-- EMPLOYER -->
+<section id="post" class="hide">
+  <button class="back" onclick="go('home')">Back to jobs</button>
+  <div class="panel">
+    <h2>Post a job</h2>
+    <p class="meta">Your role appears in the job list right away.</p>
+    <div class="row">
+      <div><label for="pt">Job title</label><input id="pt" placeholder="e.g. Delivery Rider"></div>
+      <div><label for="pc">Company</label><input id="pc" placeholder="Company name"></div>
+      <div><label for="pcat">Category</label><select id="pcat"><option>Health</option><option>Education</option><option>Sales</option><option>IT</option><option>Engineering</option><option>Construction</option><option>Agriculture</option><option>Hospitality</option><option>Logistics</option><option>NGO</option><option>Admin</option><option>Accounting</option><option>Finance</option><option>Tax</option><option>Audit</option><option>Legal</option></select></div>
+      <div><label for="pl">District</label><select id="pl"></select></div>
+      <div>
+        <div class="check-row"><input id="ps-visible" type="checkbox" checked onchange="this.parentElement.nextElementSibling.classList.toggle('hide',!this.checked)"><label for="ps-visible">Show salary on listing</label></div>
+        <div id="salary-field"><label for="ps">Salary range (UGX / month)</label><input id="ps" placeholder="3,000,000 – 4,500,000"></div>
+      </div>
+      <div><label for="pty">Type</label><select id="pty"><option>Full-time</option><option>Contract</option><option>Internship</option></select></div>
+    </div>
+    <label for="pd">Description and requirements</label>
+    <textarea id="pd" rows="4" placeholder="What will this person do? What must they have?"></textarea>
+    <p><button class="btn p" onclick="postJob()">Publish job</button></p>
+    <div id="pok" class="ok hide"></div>
+  </div>
+</section>
+
+</main>
+<div class="wrap"><footer>Job posts and applications are stored in Omulimu's database. CVs are kept private and shared only with employers you apply to.</footer></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+var jobs=[];
+var cat="";
+var supabaseClient=window.supabase.createClient("https://otclqwwpzsszeroqzswy.supabase.co","sb_publishable_3DOyj3pzbihaR-DKsjWnjg_S6yLevaa");
+var currentUser=null;var currentProfile=null;var currentJobId=null;var pendingDestination="home";var authMode="signup";
+function $(i){return document.getElementById(i)}
+var districtGroups={
+  Central:["Buikwe","Bukomansimbi","Butambala","Buvuma","Gomba","Kalangala","Kalungu","Kampala","Kasanda","Kayunga","Kiboga","Kyankwanzi","Kyotera","Luweero","Lwengo","Lyantonde","Masaka","Mityana","Mpigi","Mubende","Mukono","Nakaseke","Nakasongola","Rakai","Sembabule","Wakiso"],
+  Eastern:["Amuria","Budaka","Bududa","Bugiri","Bugweri","Bukedea","Bukwo","Bulambuli","Busia","Butaleja","Butebo","Buyende","Iganga","Jinja","Kaberamaido","Kalaki","Kaliro","Kamuli","Kapchorwa","Kapelebyong","Katakwi","Kibuku","Kumi","Kween","Luuka","Manafwa","Mayuge","Mbale","Namayingo","Namisindwa","Namutumba","Ngora","Pallisa","Serere","Sironko","Soroti","Tororo"],
+  Northern:["Abim","Adjumani","Agago","Alebtong","Amolatar","Amudat","Amuru","Apac","Arua","Dokolo","Gulu","Kaabong","Karenga","Kitgum","Koboko","Kole","Kotido","Kwania","Lamwo","Lira","Madi-Okollo","Maracha","Moroto","Moyo","Nabilatuk","Nakapiripirit","Napak","Nebbi","Nwoya","Obongi","Omoro","Otuke","Oyam","Pader","Pakwach","Terego","Yumbe","Zombo"],
+  Western:["Buhweju","Buliisa","Bundibugyo","Bunyangabu","Bushenyi","Hoima","Ibanda","Isingiro","Kabale","Kabarole","Kagadi","Kakumiro","Kamwenge","Kanungu","Kasese","Kazo","Kibaale","Kikuube","Kiruhura","Kiryandongo","Kisoro","Kitagwenda","Kyegegwa","Kyenjojo","Masindi","Mbarara","Mitooma","Ntoroko","Ntungamo","Rubanda","Rubirizi","Rukiga","Rukungiri","Rwampara","Sheema"]
+};
+function openContact(){$("contact-dialog").showModal()}
+function updateAuthButton(){if($("auth-button"))$("auth-button").textContent=currentUser?"Sign out":"Sign in"}
+function authMessage(text,isError){var message=$("auth-message");message.textContent=text;message.classList.remove("hide");message.style.background=isError?"#fde8e8":"var(--soft)";message.style.color=isError?"#8a1c1c":"var(--ink)"}
+function setAuthMode(mode){authMode=mode;$("auth-title").textContent=mode==="signup"?"Create your account":"Sign in";$("auth-copy").textContent=mode==="signup"?"Create an account as a job seeker or employer.":"Sign in to continue to Omulimu.";$("auth-name-wrap").classList.toggle("hide",mode==="signin");$("auth-role-wrap").classList.toggle("hide",mode==="signin");$("auth-password").autocomplete=mode==="signup"?"new-password":"current-password";$("auth-submit").textContent=mode==="signup"?"Create account":"Sign in";$("auth-toggle").textContent=mode==="signup"?"Already have an account? Sign in":"Need an account? Sign up";$("auth-message").classList.add("hide")}
+function toggleAuthMode(){setAuthMode(authMode==="signup"?"signin":"signup")}
+function startProfileFlow(){pendingDestination="seeker";if(currentUser){go("seeker");loadCurrentProfile();return}$("auth-role").value="seeker";setAuthMode("signup");go("account")}
+function startPostFlow(){pendingDestination="post";if(currentUser){continueAfterAuth();return}$("auth-role").value="employer";setAuthMode("signup");go("account")}
+function handleAccountButton(){if(currentUser){supabaseClient.auth.signOut().then(function(){currentUser=null;currentProfile=null;updateAuthButton();go("home")});return}pendingDestination="home";setAuthMode("signin");go("account")}
+async function getProfileRole(){if(!currentUser)return"";var result=await supabaseClient.from("profiles").select("id,role,full_name,email,phone,location,profession,experience_years,skills,cv_path").eq("id",currentUser.id).single();if(result.error){console.error(result.error);return""}currentProfile=result.data;return currentProfile.role}
+async function continueAfterAuth(){var role=await getProfileRole(),destination=pendingDestination;if((destination==="seeker"||destination==="detail")&&role!=="seeker"){setAuthMessage("This action needs a job seeker account. Sign in with one or create one.",true);go("account");return}if(destination==="post"&&role!=="employer"){setAuthMessage("Posting jobs requires an employer account. Sign in with one or create one.",true);go("account");return}if(destination==="detail"){show(currentJobId);return}go(destination);if(destination==="seeker")loadCurrentProfile()}
+async function submitAuth(){var email=$("auth-email").value.trim(),password=$("auth-password").value,name=$("auth-name").value.trim(),role=$("auth-role").value;$("auth-message").classList.add("hide");if(!email||!password||(authMode==="signup"&&!name)){authMessage("Enter your name, email, and password to continue.",true);return}var result;if(authMode==="signup"){result=await supabaseClient.auth.signUp({email:email,password:password,options:{emailRedirectTo:window.location.origin+"/",data:{full_name:name,role:role}}})}else{result=await supabaseClient.auth.signInWithPassword({email:email,password:password})}if(result.error){authMessage(result.error.message,true);return}if(!result.data.session){authMessage("Account created. Check your email to confirm it, then sign in here.",false);setAuthMode("signin");return}currentUser=result.data.user;updateAuthButton();await continueAfterAuth()}
+async function initializeSupabase(){var result=await supabaseClient.auth.getSession();if(result.error)console.error(result.error);currentUser=result.data.session?result.data.session.user:null;updateAuthButton();if(currentUser)await getProfileRole();supabaseClient.auth.onAuthStateChange(function(_event,session){currentUser=session?session.user:null;if(!currentUser)currentProfile=null;updateAuthButton()});await loadJobs()}
+function formatSalary(min,max){var format=function(value){return new Intl.NumberFormat("en-UG",{maximumFractionDigits:0}).format(value)};if(min==null&&max==null)return"";if(min==null)return"Up to "+format(max);if(max==null)return"From "+format(min);return format(min)+" – "+format(max)}
+async function loadJobs(){var result=await supabaseClient.from("job_listings").select("id,company_name,title,category,location,employment_type,description,requirements,salary_min,salary_max,salary_currency,created_at").order("created_at",{ascending:false});if(result.error){jobs=[];render();$("count").textContent="Could not load jobs. Check your connection and try again.";console.error(result.error);return}jobs=(result.data||[]).map(function(row){return{id:row.id,t:row.title,c:row.company_name,cat:row.category,loc:row.location,sal:formatSalary(row.salary_min,row.salary_max),ty:row.employment_type,d:row.description,req:row.requirements?String(row.requirements).split(/\r?\n/).filter(Boolean):[]}});render()}
+function populateLocations(){
+ var filter=$("loc"),posting=$("pl"),seeker=$("sl");
+ Object.keys(districtGroups).forEach(function(region){
+  var filterGroup=document.createElement("optgroup"),postingGroup=document.createElement("optgroup"),seekerGroup=document.createElement("optgroup");
+  filterGroup.label=postingGroup.label=seekerGroup.label=region;
+  districtGroups[region].forEach(function(name){
+   var filterOption=document.createElement("option"),postingOption=document.createElement("option"),seekerOption=document.createElement("option");
+   filterOption.value=postingOption.value=name;
+   seekerOption.value=name;
+   filterOption.textContent=postingOption.textContent=name;
+   seekerOption.textContent=name;
+   filterGroup.appendChild(filterOption);postingGroup.appendChild(postingOption);seekerGroup.appendChild(seekerOption);
+  });
+  filter.appendChild(filterGroup);posting.appendChild(postingGroup);seeker.appendChild(seekerGroup);
+ });
+ var remote=document.createElement("option");remote.value=remote.textContent="Remote";
+ filter.appendChild(remote.cloneNode(true));posting.appendChild(remote.cloneNode(true));seeker.appendChild(remote);
+ posting.value="Kampala";seeker.value="Kampala";
+}
+function go(v){["home","detail","account","seeker","post"].forEach(function(s){$(s).classList.toggle("hide",s!==v)});window.scrollTo(0,0);if(v==="home")render()}
+function chips(){var cats=["All","Health","Education","Sales","IT","Engineering","Construction","Agriculture","Hospitality","Logistics","NGO","Admin","Accounting","Finance","Tax","Audit","Legal"];$("chips").innerHTML=cats.map(function(c){var on=(c==="All"&&!cat)||c===cat;return '<button class="chip" aria-pressed="'+on+'" onclick="setCat(\''+c+'\')">'+c+'</button>'}).join("")}
+function setCat(c){cat=c==="All"?"":c;render()}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function render(){chips();var q=$("q").value.toLowerCase(),l=$("loc").value;
+ var r=jobs.filter(function(j){return(!cat||j.cat===cat)&&(!l||j.loc===l)&&(!q||(j.t+" "+j.c+" "+j.d).toLowerCase().indexOf(q)>-1)});
+ $("count").textContent=r.length+(r.length===1?" job found":" jobs found");$("sj").textContent=jobs.length;
+ $("list").innerHTML=r.length?r.map(function(j){return '<button class="job" onclick="show(\''+esc(j.id)+'\')"><h3>'+esc(j.t)+'</h3><div class="meta">'+esc(j.c)+' · '+esc(j.loc)+'</div><span class="tag">'+esc(j.cat)+'</span><span class="tag">'+esc(j.ty)+'</span>'+(j.sal?'<span class="tag">UGX '+esc(j.sal)+'</span>':'')+'</button>'}).join(""):'<p class="meta">No jobs match. Clear a filter or search for a broader title.</p>'}
+function show(id){var j=jobs.filter(function(x){return String(x.id)===String(id)})[0];if(!j)return;currentJobId=j.id;var requirements=j.req.length?'<b>Requirements</b><ul class="req">'+j.req.map(function(r){return'<li>'+esc(r)+'</li>'}).join("")+'</ul>':'';
+ $("detail").innerHTML='<button class="back" onclick="go(\'home\')">Back to jobs</button><div class="panel"><h2>'+esc(j.t)+'</h2><div class="meta">'+esc(j.c)+' · '+esc(j.loc)+' · '+esc(j.ty)+'</div>'+(j.sal?'<p><span class="tag" style="margin-left:0">UGX '+esc(j.sal)+' / month</span></p>':'')+'<p>'+esc(j.d)+'</p>'+requirements+'<hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><h3 style="margin:0">Apply for this job</h3><label for="an">Full name</label><input id="an" value="'+esc(currentProfile?currentProfile.full_name:"")+'"><label for="ae">Email</label><input id="ae" type="email" value="'+esc(currentUser?currentUser.email:"")+'"><label for="am">Short note to the employer</label><textarea id="am" rows="3"></textarea><p><button class="btn p" onclick="apply()">Send application</button></p><div id="aok" class="ok hide"></div></div>';go("detail")}
+async function apply(){var name=$("an").value.trim(),email=$("ae").value.trim(),note=$("am").value.trim(),message=$("aok");message.classList.remove("hide");if(!currentUser){pendingDestination="detail";$("auth-role").value="seeker";setAuthMode("signin");go("account");return}if(!name||!email){message.textContent="Enter your name and email to apply.";return}if(await getProfileRole()!=="seeker"){message.textContent="Applications require a job seeker account.";return}var result=await supabaseClient.from("applications").insert({job_id:currentJobId,seeker_id:currentUser.id,cover_note:note||null,cv_path:currentProfile?currentProfile.cv_path:null});if(result.error){message.textContent=result.error.code==="23505"?"You have already applied for this job.":result.error.message;return}message.textContent="Application sent successfully."}
+async function loadCurrentProfile(){if(!currentUser)return;var result=await supabaseClient.from("profiles").select("id,role,full_name,email,phone,location,profession,experience_years,skills,cv_path").eq("id",currentUser.id).single();if(result.error){console.error(result.error);return}currentProfile=result.data;$("sn").value=currentProfile.full_name||"";$("st").value=currentProfile.profession||"";$("sy").value=currentProfile.experience_years==null?"":currentProfile.experience_years;$("sl").value=currentProfile.location||"Kampala";$("se").value=currentProfile.email||currentUser.email||"";$("sk").value=(currentProfile.skills||[]).join(", ")}
+async function saveProfile(){var message=$("sok"),name=$("sn").value.trim(),profession=$("st").value.trim();message.classList.remove("hide");if(!currentUser){pendingDestination="seeker";$("auth-role").value="seeker";setAuthMode("signin");go("account");return}if(await getProfileRole()!=="seeker"){message.textContent="Creating a seeker profile requires a job seeker account.";return}if(!name||!profession){message.textContent="Enter your name and profession to save your profile.";return}var cvPath=currentProfile?currentProfile.cv_path:null,file=$("scv").files[0];if(file){cvPath=currentUser.id+"/"+Date.now()+"_"+file.name.replace(/[^a-zA-Z0-9._-]/g,"_");var upload=await supabaseClient.storage.from("private-cvs").upload(cvPath,file);if(upload.error){message.textContent=upload.error.message;return}}var profile={full_name:name,email:$("se").value.trim()||currentUser.email,profession:profession,experience_years:$("sy").value?Number($("sy").value):null,location:$("sl").value,skills:$("sk").value.split(",").map(function(skill){return skill.trim()}).filter(Boolean),cv_path:cvPath,updated_at:new Date().toISOString()};var result=await supabaseClient.from("profiles").update(profile).eq("id",currentUser.id);if(result.error){message.textContent=result.error.message;return}currentProfile=Object.assign({},currentProfile,profile);message.textContent="Profile saved to your account."}
+async function postJob(){var title=$("pt").value.trim(),company=$("pc").value.trim(),message=$("pok");message.classList.remove("hide");if(!currentUser){pendingDestination="post";$("auth-role").value="employer";setAuthMode("signin");go("account");return}if(await getProfileRole()!=="employer"){message.textContent="Posting jobs requires an employer account.";return}if(!title||!company){message.textContent="Enter a job title and company name to publish.";return}var salaryText=$("ps").value.trim(),values=salaryText.match(/\d[\d,]*(?:\.\d+)?/g)||[],amounts=values.map(function(value){return Number(value.replace(/,/g,""))}).filter(Number.isFinite),showSalary=$("ps-visible").checked;var result=await supabaseClient.from("jobs").insert({employer_id:currentUser.id,title:title,company_name:company,category:$("pcat").value,location:$("pl").value,employment_type:$("pty").value,description:$("pd").value.trim()||"Details coming soon.",requirements:null,salary_min:showSalary&&amounts.length?amounts[0]:null,salary_max:showSalary&&amounts.length>1?amounts[1]:null,show_salary:showSalary,status:"published"});if(result.error){message.textContent=result.error.message;return}message.textContent="Published. "+title+" is now live.";["pt","pc","ps","pd"].forEach(function(id){$(id).value=""});await loadJobs()}
+populateLocations();render();initializeSupabase();
+</script>
+</body>
+</html>
